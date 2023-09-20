@@ -44,7 +44,6 @@ node testing.js
 
 # Contributors
 
-<a href="https://github.com/kuumoneko/GoogleBard-js/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=kuumoneko/GoogleBard-js" />
+<a href="https://github.com/Kuumoneko/GoogleBard-js/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Kuumoneko/GoogleBard-js" />
 </a>
-
