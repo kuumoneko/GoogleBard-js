@@ -1,5 +1,26 @@
 {
+  "name": "googlebard-js",
+  "version": "1.0.0",
+  "description": "Bard API using javascript",
+  "main": "index.js",
   "dependencies": {
     "https": "^1.0.0"
-  }
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "testing.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kuumoneko/GoogleBard-js.git"
+  },
+  "keywords": [
+    "bardapi"
+  ],
+  "author": "Kuumoneko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kuumoneko/GoogleBard-js/issues"
+  },
+  "homepage": "https://github.com/kuumoneko/GoogleBard-js#readme"
 }

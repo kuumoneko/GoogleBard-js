@@ -2,7 +2,7 @@
 
 # Install
 
-Using `npm install` to install all package
+`npm i googlebard-js`
 
 # Getting cookie
 
