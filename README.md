@@ -1,8 +1,9 @@
 # Google Bard API using node js
 
 # Install
-
-`npm i googlebard-js`
+```
+npm i googlebard-js
+```
 
 # Getting cookie
 
