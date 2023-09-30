@@ -1,14 +1,13 @@
 {
   "name": "googlebard-js",
-  "version": "1.0.0",
+  "version": "1.1.5",
   "description": "Bard API using javascript",
   "main": "index.js",
   "dependencies": {
     "https": "^1.0.0"
   },
-  "devDependencies": {},
   "scripts": {
-    "test": "testing.js"
+    "test": "test/test.js"
   },
   "repository": {
     "type": "git",

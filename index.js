@@ -1,5 +1,5 @@
-const { ChatBot } = require('./src/bard')
+const ChatBot = require("./src/bard");
 
 module.exports = {
-    ChatBot
-}
+  ChatBot,
+};

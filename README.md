@@ -1,6 +1,7 @@
 # Google Bard API using node js
 
 # Install
+
 ```
 npm i googlebard-js
 ```
@@ -8,7 +9,7 @@ npm i googlebard-js
 # Getting cookie
 
 1. Go to https://bard.google.com/
-2. Copy cookies in JSON by using cookie editor extensions
+2. Copy cookies named `__Secure-1PSID` and `__Secure-1PSIDTS`
 
 # Usage
 
@@ -16,27 +17,24 @@ npm i googlebard-js
 /**
  * testing.js
  */
-const { ChatBot } = require('./src/bard')
+const ChatBot = require("../src/bard");
 
-const cookie = 'Your-cookie-json'
+const __Secure_1PSIDTS = "";
+const __Secure_1PSID = "";
 
-var cookies = ""
+async function test() {
 
-cookie.forEach((coookie) => {
-    cookies += `${coookie.name}=${coookie.value};`
-})
+  const cookie = `__Secure-1PSIDTS=${__Secure_1PSIDTS};__Secure-1PSID=${__Secure_1PSID}`;
 
-const chatbot = new ChatBot(cookies);
+  const chatbot = new ChatBot(cookie);
 
-async function testing() {
-    await chatbot.getAPI();
+  await chatbot.getAPI();
 
-    chatbot.ask('Your-prompt').then((data) => {
-        console.log(data);
-    })
+  console.log(await chatbot.ask("Your-prompt"));
 }
 
-testing()
+test();
+
 ```
 
 ```
