@@ -1,15 +1,13 @@
-const ChatBot = require("../src/bard");
-const { __Secure_1PSID, __Secure_1PSIDTS } = require("./config.json");
+import  {ChatBot}  from "../src/bard.js";
+const psid = "Your __Secure-1PSID cookie value";
+const psidts = "Your __Secure-1PSIDTS cookie value";
+let cookies = `__Secure-1PSID=${psid}; __Secure-1PSIDTS=${psidts}`;
+let bot = new ChatBot(cookies);
 
-async function burh() {
-
-  const cookie = `__Secure-1PSIDTS=${__Secure_1PSIDTS};__Secure-1PSID=${__Secure_1PSID}`;
-
-  const chatbot = new ChatBot(cookie);
-
-  await chatbot.getAPI();
-
-  console.log(await chatbot.ask("best pc config fo programmming"));
+async function tesst() {
+    await bot.getAPI();
+    let response = await bot.ask("Your prompt");
+console.log(response);
 }
 
-burh();
+tesst() 

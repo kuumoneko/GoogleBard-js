@@ -9,21 +9,22 @@ npm i googlebard-js
 # Getting cookie
 
 1. Go to https://bard.google.com/
-2. Copy cookies named `__Secure-1PSID` and `__Secure-1PSIDTS`
+2. Copy cookies named `__Secure-1PSID` and `__Secure-1PSIDTS` by using cookie editor extensions
 
 # Usage
 
-```shell
+```js
 /**
- * testing.js
+ * test.js
  */
-const ChatBot = require("../src/bard");
+const ChatBot = require("googlebard-js");
+// import ChatBot from "googlebard-js";
+// if you use es6
 
-const __Secure_1PSIDTS = "";
-const __Secure_1PSID = "";
+const __Secure_1PSID = "Your __Secure-1PSID cookie value";
+const __Secure_1PSIDTS = "Your __Secure-1PSIDTS cookie value";
 
 async function test() {
-
   const cookie = `__Secure-1PSIDTS=${__Secure_1PSIDTS};__Secure-1PSID=${__Secure_1PSID}`;
 
   const chatbot = new ChatBot(cookie);
@@ -34,11 +35,10 @@ async function test() {
 }
 
 test();
-
 ```
 
 ```
-node testing.js
+node test.js
 ```
 
 # Contributors
