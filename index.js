@@ -1,5 +1,3 @@
-const ChatBot = require("./src/bard");
+import { ChatBot } from "./src/bard";
 
-module.exports = {
-  ChatBot,
-};
+export default ChatBot;
