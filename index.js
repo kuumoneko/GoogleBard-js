@@ -1,3 +1,3 @@
-import { ChatBot } from "./src/bard";
+import { ChatBot } from "./src/bard.js";
 
 export default ChatBot;
