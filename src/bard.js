@@ -76,7 +76,7 @@ export class ChatBot {
 	
     async getAPI() {
         try {
-            const response = await this.axios.get("https://bard.google.com", {
+            const response = await this.axios.get("https://gemini.google.com", {
                 headers: {
                     Cookie: this.cookies,
                 },
@@ -127,7 +127,7 @@ export class ChatBot {
 		try {
 			let req = [null, JSON.stringify([[prompt], ["en"], ["", "", ""]])];
 			const moi = JSON.stringify(req);
-            const response = await this.axios.post("https://bard.google.com/_/BardChatUi/data/assistant.lamda.BardFrontendService/StreamGenerate", new URLSearchParams({
+            const response = await this.axios.post("https://gemini.google.com/_/BardChatUi/data/assistant.lamda.BardFrontendService/StreamGenerate", new URLSearchParams({
                 at: this.snlm0e,
                 "f.req": moi,
             }), {
